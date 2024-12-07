@@ -59,5 +59,10 @@ public class Product {
 	public static String staticUpperCaseName(Product p) {   // metodo statico utiliza a forma que ira retornar o metodo(String no caso)
 	  return p.getName().toUpperCase();
 	}
+	
+	
+	public  String nonStaticUpperCaseName() {   // metodo statico utiliza a forma que ira retornar o metodo(String no caso)
+		 return name.toUpperCase();
+		}
 
 }
