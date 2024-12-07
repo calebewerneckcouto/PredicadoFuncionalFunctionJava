@@ -26,7 +26,10 @@ public class Program {
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
 
-	  List<String> name =	list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+	  List<String> name =	list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
+	  
+	  
+	  
 	  
 	//  for(String s : name) {
 	//	  System.out.println(s);   // for comum
