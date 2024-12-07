@@ -28,9 +28,9 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 		
 		
-		Function<Product, String> prods = p-> p.getName().toUpperCase();
+		
 
-	  List<String> name =	list.stream().map(prods).collect(Collectors.toList());
+	  List<String> name =	list.stream().map(p-> p.getName().toUpperCase()).collect(Collectors.toList());
 	  
 	  
 	  
